@@ -23,5 +23,6 @@
     "live-server": "^1.2.1",
     "sass": "^1.17.2"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {}
 }
