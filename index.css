@@ -72,33 +72,26 @@ a:hover, a:focus {
 .sidebar--nav-link {
   padding-left: 3.5rem;
   border-radius: 0 0.4rem 0.4rem 0;
-  -webkit-transition: background-color 0.4s ease;
-  -moz-transition: background-color 0.4s ease;
-  -ms-transition: background-color 0.4s ease;
-  -o-transition: background-color 0.4s ease;
-  transition: background-color 0.4s ease;
-  -webkit-transition: color 0.4s ease;
-  -moz-transition: color 0.4s ease;
-  -ms-transition: color 0.4s ease;
-  -o-transition: color 0.4s ease;
-  transition: color 0.4s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.4s ease;
+  -moz-transition: background-color 0.5s ease, color 0.4s ease;
+  -ms-transition: background-color 0.5s ease, color 0.4s ease;
+  -o-transition: background-color 0.5s ease, color 0.4s ease;
+  transition: background-color 0.5s ease, color 0.4s ease;
 }
-.sidebar--nav-link:hover, .sidebar--nav-link:focus, .sidebar--nav-link.current {
-  background: #20293b;
-}
-.sidebar--nav-link:hover svg, .sidebar--nav-link:focus svg, .sidebar--nav-link.current svg {
-  color: #1f8efa;
-}
-.sidebar--nav-link.current {
-  color: #1f8efa;
-}
-.sidebar--nav-link.current:before {
+.sidebar--nav-link:hover:before, .sidebar--nav-link:focus:before, .sidebar--nav-link.current:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   border-right: 6px solid #1f8efa;
+}
+.sidebar--nav-link:hover svg, .sidebar--nav-link:focus svg, .sidebar--nav-link.current svg {
+  color: #1f8efa;
+}
+.sidebar--nav-link.current {
+  color: #1f8efa;
+  background: #20293b;
 }
 .sidebar--nav-link svg {
   color: #5b6d82;

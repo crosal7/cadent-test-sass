@@ -197,5 +197,17 @@
         </nav>
       </div>
     </div>
+
+    <script>
+      const sideNavItems = document.querySelectorAll('.sidebar--nav-link');
+
+      function toggleCurrent(e) {
+        e.preventDefault();
+        sideNavItems.forEach((item) => item.classList.remove('current'));
+        this.classList.toggle('current');
+      }
+
+      sideNavItems.forEach((item) => item.addEventListener('click', toggleCurrent));
+    </script>
   </body>
 </html>
